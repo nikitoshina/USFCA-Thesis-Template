@@ -1,6 +1,6 @@
-title: quarto-thesis
-author: Eli Holmes
-version: 0.2.3
+title: usfca-quarto-thesis
+author: Nikita Tkachenko
+version: 0.0.1
 contributes:
   format:
     pdf:
@@ -16,7 +16,4 @@ contributes:
       include-in-header: 
         - partials/in-header.tex
       colorlinks: false
-      citecolor: black #magenta
-      linkcolor: black #blue
-      urlcolor: black #red
-      toclinkcolor: black
+

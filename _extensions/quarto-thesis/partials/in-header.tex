@@ -1,42 +1,23 @@
-% Load your needed packages and other commands of yours here:
-%\usepackage{} % ... note that old .sty files can be included here
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %--------------------------------------------------------------------------
 % Do NOT edit the rest of the preample UNLESS YOU KNOW WHAT YOU'RE DOING!
 %--------------------------------------------------------------------------
-
 
 \usepackage{amsmath,amssymb,amstext} % Lots of math symbols and environments
 \usepackage{graphicx} % For including graphics 
 
 \usepackage{nomentbl} 
-\makenomenclature 
+\makenomenclature % Make Nomenclature
 
 \usepackage{ifpdf}
 
+\usepackage{setspace} % To set sapces between lines
 
-
-
+% Preserves paragraph styles. It is here because Quarto rendering would change styles and give an error.
 \let\paragraph\oldparagraph
 \let\subparagraph\oldsubparagraph
 
 \usepackage{titlesec}
+
 % Remake title styles
 \titleclass{\chapter}{straight}
 \titleformat{\chapter}[display]
@@ -53,10 +34,10 @@
 
 \titleformat{\subsubsection}{\bfseries\normalsize}{\thesubsubsection.~}{0pt}{}
 
-% Adds space between paragraphs
+% Adds indent to paragraphs
 \setlength{\parindent}{2em}
 
-% Removes breaks from include. To use that functionality use include*{chapter}
+% Removes breaks from include. To use that functionality use include*{chapter}. Mainly for Overlead editing.
 \usepackage{newclude}
 
 %%% redo margins
@@ -84,37 +65,12 @@
 % Making sure absolutely nothing passes the right margin
 \setlength{\hfuzz}{0.0pt}
 
-% Changing where the page numbers go on pages that aren't the first
-% page of a chapter.
-
-%\pagestyle{myheadings}
-%\pagestyle{plain}
-%\markright{}
-
-
-
-
 
 %%%%
 % Line spacing
 \renewcommand{\baselinestretch}{1.9} % this is the default line space setting
 
-% By default, each chapter will start on a recto (right-hand side)
-% page.  We also force each section of the front pages to start on 
-% a recto page by inserting \cleardoublepage commands.
-% In many cases, this will require that the verso page be
-% blank and, while it should be counted, a page number should not be
-% printed.  The following statements ensure a page number is not
-% printed on an otherwise blank verso page.
-\let\origdoublepage\cleardoublepage
-\newcommand{\clearemptydoublepage}{%
-  \clearpage{\pagestyle{empty}\origdoublepage}}
-\let\cleardoublepage\clearemptydoublepage
-
-% To make space between lines
-\usepackage{setspace}
-
-%
+% Editing Table of Contents
 \usepackage{tocloft}
 \renewcommand{\cftsecfont}{\normalfont}
 
@@ -131,7 +87,6 @@
 \renewcommand{\cftsubsecfont}{\normalfont}
 \setlength{\cftbeforetoctitleskip}{0pt}
 
-%\renewcommand{\cftnotnumb}[1]{\bfseries #1}
 \renewcommand{\cftchapfont}{\normalfont}
 \renewcommand{\cftchappagefont}{\normalfont}
 
@@ -139,14 +94,6 @@
 
 \renewcommand{\cftpartfont}{\normalfont}
 \renewcommand{\cftpartpagefont}{\normalfont}
-
-%\usepackage{showframe}
-
-\usepackage{datetime,scrdate}
-\newdateformat{nwfmt}{\THEDAY\ \monthname,\ \THEYEAR}
-
-\newcommand{\datepublish}{\newdate{mydate}{$book.date.day$}{$book.date.month$}{$book.date.year$}% day/month/year
-                          \nwfmt\displaydate{mydate}}
                           
 % APA citation
 \usepackage{apacite}

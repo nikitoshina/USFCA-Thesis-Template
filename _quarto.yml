@@ -5,8 +5,6 @@ project:
 
 book:
   title: "The Effect of Climate Change on Economic Decision Making"
-  paper-title: The Effect of Climate Change on Economic Decision Making
-  link-citations: true
   author:
     name: Nikita Tkachenko
     email: natkachenko@dons.usfca.edu
@@ -22,7 +20,6 @@ book:
     human behavior are often overlooked, although temperature plays a significant role in how humans 
     interact with their environment and one another. This paper aims to provide a concise overview of 
     the direct effects of temperature on human behavior.
-  acknowledgements: "Thank you to Alessandra, Bruce, and Jesse"
   chapters:
     - index.qmd
  #   - Chapters/Chapter1.qmd
@@ -44,6 +41,7 @@ thesis:
   university: University of San Francisco
   department: Department of Economics
   program: International Development Economics
+  acknowledgements: "Thank you to Alessandra, Bruce, and Jesse"
   frontpage: "Frontmatter/frontpage.tex"
   toc: "Frontmatter/toc.tex"
 
