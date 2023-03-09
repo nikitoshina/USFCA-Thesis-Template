@@ -37,9 +37,9 @@ book:
   search: true
 
 thesis:
-  supervisor: 
-    name: Alessandra Cassar
-    url: https://quarto.org/
+  # supervisor: 
+  #   name: Alessandra Cassar
+  #   url: https://quarto.org/
   degree-name: Masters of Science Degree
   university: University of San Francisco
   department: Department of Economics
