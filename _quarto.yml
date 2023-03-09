@@ -59,6 +59,6 @@ format:
   html:
     theme: cosmo
   quarto-thesis-pdf: 
-    urlcolor: red
+    urlcolor: black
     
 
