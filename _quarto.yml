@@ -1,0 +1,68 @@
+project:
+  title: "The Effect of Climate Change on Economic Decision Making"
+  type: book
+  output-dir: "./output"
+
+book:
+  title: "The Effect of Climate Change on Economic Decision Making"
+  paper-title: The Effect of Climate Change on Economic Decision Making
+  link-citations: true
+  author:
+    name: Nikita Tkachenko
+    email: natkachenko@dons.usfca.edu
+  date: "5/13/2023"
+  date-format: "d MMMM, YYYY"
+#  cover-image: 
+  downloads: [pdf]
+  abstract: |
+    As climate change becomes an increasingly inescapable reality, the impact of rising temperatures on 
+    society has become a top research priority. A growing body of literature aims to 
+    understand the consequences of global warming, such as freshwater depletion, soil degradation, 
+    and sea level rise. However, the direct effects of temperature on 
+    human behavior are often overlooked, although temperature plays a significant role in how humans 
+    interact with their environment and one another. This paper aims to provide a concise overview of 
+    the direct effects of temperature on human behavior.
+  acknowledgements: "Thank you to Alessandra, Bruce, and Jesse"
+  chapters:
+    - index.qmd
+ #   - Chapters/Chapter1.qmd
+    - Chapters/Chapter2.qmd
+    - references.qmd
+  appendices:
+    - Appendices/AppendixA.qmd
+
+#  site-url: https://nmfs-opensci.github.io/quarto-thesis/
+#  repo-url: https://github.com/nmfs-opensci/quarto-thesis
+#  repo-actions: [edit, source, issue]
+  search: true
+
+thesis:
+  supervisor: 
+    name: Alessandra Cassar
+    url: https://quarto.org/
+  degree-name: Masters of Science Degree
+  university: University of San Francisco
+  department: Department of Economics
+  program: International Development Economics
+  frontpage: "Frontmatter/frontpage.tex"
+  toc: "Frontmatter/toc.tex"
+
+
+bibliography: [references.bib]
+
+execute:
+  echo: false
+  code-overflow: wrap
+
+# urlcolor changes the url color in the body of the PDF
+# linkcolor changes color of internal links (like to figures)
+# toclinkcolor changes color of toc, lof and lot links
+format:  
+  html:
+    theme: cosmo
+  quarto-thesis-pdf: 
+    urlcolor: red
+    toclinkcolor: black
+    toc-depth: 2
+    
+

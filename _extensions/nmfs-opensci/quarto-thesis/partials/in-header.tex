@@ -1,0 +1,165 @@
+% Load your needed packages and other commands of yours here:
+%\usepackage{} % ... note that old .sty files can be included here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------
+% Do NOT edit the rest of the preample UNLESS YOU KNOW WHAT YOU'RE DOING!
+%--------------------------------------------------------------------------
+
+
+\usepackage{amsmath,amssymb,amstext} % Lots of math symbols and environments
+\usepackage{graphicx} % For including graphics 
+
+\usepackage{nomentbl} 
+\makenomenclature 
+
+\usepackage{ifpdf}
+
+
+
+
+\let\paragraph\oldparagraph
+\let\subparagraph\oldsubparagraph
+
+\usepackage{titlesec}
+% Remake title styles
+\titleclass{\chapter}{straight}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries}{}{0pt}{\Huge}
+
+\titleformat{\chapter}{\bfseries\LARGE}{\thechapter.~ }{0pt}{}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+
+\titleformat{\section}{\bfseries\Large}{\thesection.~}{0pt}{}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+
+
+\titleformat{\subsection}{\bfseries\large}{\thesubsection.~}{0pt}{}
+
+\titleformat{\subsubsection}{\bfseries\normalsize}{\thesubsubsection.~}{0pt}{}
+
+% Adds space between paragraphs
+\setlength{\parindent}{2em}
+
+% Removes breaks from include. To use that functionality use include*{chapter}
+\usepackage{newclude}
+
+%%% redo margins
+
+% Main text box is the width/height of the paper minus 2in
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.75in} % + footskip (0.25) = 9.00in
+
+% Only the left and top margins can be defined
+% 1in is added to given values
+\setlength{\topmargin}{0.0in}
+\setlength{\evensidemargin}{0.0in}
+\setlength{\oddsidemargin}{0.0in}
+
+% The top margin is also affected by the headhight and headsep
+\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+
+% The bottom margin is also affected by the footskip
+% i.e. the length of the page has the following markers:
+% top of text at 1.00in, bottom of text at 9.75in,
+% page number at 10.00in, bottom of page at 11.00in
+\setlength{\footskip}{0.25in}
+
+% Making sure absolutely nothing passes the right margin
+\setlength{\hfuzz}{0.0pt}
+
+% Changing where the page numbers go on pages that aren't the first
+% page of a chapter.
+
+%\pagestyle{myheadings}
+%\pagestyle{plain}
+%\markright{}
+
+
+
+
+
+%%%%
+% Line spacing
+\renewcommand{\baselinestretch}{1.9} % this is the default line space setting
+
+% By default, each chapter will start on a recto (right-hand side)
+% page.  We also force each section of the front pages to start on 
+% a recto page by inserting \cleardoublepage commands.
+% In many cases, this will require that the verso page be
+% blank and, while it should be counted, a page number should not be
+% printed.  The following statements ensure a page number is not
+% printed on an otherwise blank verso page.
+\let\origdoublepage\cleardoublepage
+\newcommand{\clearemptydoublepage}{%
+  \clearpage{\pagestyle{empty}\origdoublepage}}
+\let\cleardoublepage\clearemptydoublepage
+
+% To make space between lines
+\usepackage{setspace}
+
+%
+\usepackage{tocloft}
+\renewcommand{\cftsecfont}{\normalfont}
+
+% Align all entries in TOC
+\renewcommand{\cftsecindent}{0pt}
+\renewcommand{\cftsubsecindent}{0pt}
+\renewcommand{\cftsubsubsecindent}{0pt}
+
+
+\renewcommand{\cfttoctitlefont}{\Huge\bfseries}
+
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\setlength{\cftbeforetoctitleskip}{0pt}
+
+%\renewcommand{\cftnotnumb}[1]{\bfseries #1}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\renewcommand{\cftpartfont}{\normalfont}
+\renewcommand{\cftpartpagefont}{\normalfont}
+
+%\usepackage{showframe}
+
+\usepackage{datetime,scrdate}
+\newdateformat{nwfmt}{\THEDAY\ \monthname,\ \THEYEAR}
+
+\newcommand{\datepublish}{\newdate{mydate}{$book.date.day$}{$book.date.month$}{$book.date.year$}% day/month/year
+                          \nwfmt\displaydate{mydate}}
+                          
+% APA citation
+\usepackage{apacite}
+\bibliographystyle{apacite}
+
+
+
+
+
+
+
+%
+\AtBeginDocument{
+\hypersetup{pdftitle=$book.title$} % Set the PDF's title to your title
+\hypersetup{pdfauthor=$author$} % Set the PDF's author to your name
+}

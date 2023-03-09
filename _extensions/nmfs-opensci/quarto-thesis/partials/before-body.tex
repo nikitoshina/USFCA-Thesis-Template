@@ -1,0 +1,81 @@
+% Title Page
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+% T I T L E   P A G E
+% -------------------
+% Last updated May 24, 2011, by Stephen Carr, IST-Client Services
+% The title page is counted as page `i' but we need to suppress the
+% page number.  We also don't want any headers or footers.
+\pagestyle{empty}
+\pagenumbering{roman}
+
+% The contents of the title page are specified in the "titlepage"
+% environment.
+\begin{titlepage}
+\singlespacing
+\begin{center}
+\Huge
+{\bf {$book.paper-title$}}
+
+\vspace*{2.0cm}
+
+
+{\Large {$author$}}
+
+\vspace*{0.5cm}
+
+\normalsize
+$thesis.department$\\
+$thesis.university$\\
+2130 Fulton St.\\
+San Francisco, CA 94117\\
+
+\vspace*{0.5cm}
+
+\normalsize
+Thesis Submission for the $thesis.degree-name$\\
+in $thesis.program$\\
+
+\vspace*{0.5cm}
+
+\normalsize
+email: \textit{$book.author.email$}\\
+
+\vspace*{0.5cm}
+
+{\normalsize $date$}
+
+\vspace*{2.0cm}
+% \vspace*{\fill}
+
+\begin{flushleft}
+
+\normalsize \underline{Abstract}: $book.abstract$
+
+$if(book.acknowledgements)$
+  \vspace*{0.5cm}
+  {\normalsize \underline{Acknowledgements}: $book.acknowledgements$}
+$endif$
+
+\end{flushleft}
+
+
+\end{center}
+\end{titlepage}
+
+% The rest of the front pages should contain no headers and be numbered using Roman numerals starting with `ii'
+\pagestyle{plain}
+\setcounter{page}{2}
+
+%----------------------------------------------------------------------------------------
+% Table of Contents
+%----------------------------------------------------------------------------------------
+
+\input{"$thesis.toc$"}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering

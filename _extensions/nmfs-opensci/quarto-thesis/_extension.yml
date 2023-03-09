@@ -1,0 +1,22 @@
+title: quarto-thesis
+author: Eli Holmes
+version: 0.2.3
+contributes:
+  format:
+    pdf:
+      documentclass: book
+      classoption: ["letterpaper","12pt","titlepage","oneside","final"]
+      template-partials: 
+        - "partials/title.tex"
+        - "partials/before-body.tex"
+      toc: false
+      toc-depth: 3
+      include-before-body: 
+        - partials/definitions.tex
+      include-in-header: 
+        - partials/in-header.tex
+      colorlinks: false
+      citecolor: black #magenta
+      linkcolor: black #blue
+      urlcolor: black #red
+      toclinkcolor: black
