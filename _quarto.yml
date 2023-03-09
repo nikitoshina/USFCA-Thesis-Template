@@ -60,7 +60,5 @@ format:
     theme: cosmo
   quarto-thesis-pdf: 
     urlcolor: red
-    toclinkcolor: black
-    toc-depth: 2
     
 

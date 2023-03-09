@@ -1,1 +1,1 @@
-{"options":{"chapter-id":"sec-appA","chapters":true,"chapters-alpha":true,"chapters-appendix":true},"headings":["how-do-i-change-the-colors-of-links","sec-appA"],"entries":[{"order":{"number":1,"section":[1,0,0,0,0,0,0]},"key":"sec-appA"}]}
+{"options":{"chapters-alpha":true,"chapters":true,"chapters-appendix":true,"chapter-id":"sec-appA"},"headings":["how-do-i-change-the-colors-of-links","sec-appA"],"entries":[{"order":{"section":[1,0,0,0,0,0,0],"number":1},"key":"sec-appA"}]}
