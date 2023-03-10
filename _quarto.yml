@@ -1,17 +1,17 @@
 project:
-  title: "The Effect of Climate Change on Economic Decision Making"
   type: book
   output-dir: "./output"
 
 book:
-  title: "The Effect of Climate Change on Economic Decision Making"
+  title: "The Effect of Climate Change on Economic Decision Making"  # Edit this
   author:
-    name: Nikita Tkachenko
-    email: natkachenko@dons.usfca.edu
-  date: "5/13/2023"
+    name: Nikita Tkachenko  # Edit this
+    email: natkachenko@dons.usfca.edu  # Edit this
+  date: "5/13/2023"  # Edit this
   date-format: "d MMMM, YYYY"
 #  cover-image: 
   downloads: [pdf]
+   # Edit the abstract
   abstract: |
     As climate change becomes an increasingly inescapable reality, the impact of rising temperatures on 
     society has become a top research priority. A growing body of literature aims to 
@@ -22,26 +22,28 @@ book:
     the direct effects of temperature on human behavior.
   chapters:
     - index.qmd
- #   - Chapters/Chapter1.qmd
     - Chapters/Chapter2.qmd
+    # You cann add your other chapters here
     - references.qmd
   appendices:
     - Appendices/AppendixA.qmd
+    # You can add your appendices here
 
-#  site-url: https://nmfs-opensci.github.io/quarto-thesis/
-#  repo-url: https://github.com/nmfs-opensci/quarto-thesis
-#  repo-actions: [edit, source, issue]
+#  site-url: your_url_here # You can link your website here
+#  repo-url: https://github.com/nikitoshina/USFCA-Thesis-Template # you can link github repo here
+#  repo-actions: [edit, source, issue] # actions with your github repo
   search: true
 
 thesis:
   # supervisor: 
   #   name: Alessandra Cassar
   #   url: https://quarto.org/
-  degree-name: Masters of Science Degree
-  university: University of San Francisco
-  department: Department of Economics
-  program: International Development Economics
-  acknowledgements: "Thank you to Alessandra, Bruce, and Jesse"
+  degree-name: Masters of Science Degree # Edit this
+  university: University of San Francisco # Edit this
+  department: Department of Economics # Edit this
+  program: International Development Economics # Edit this
+  acknowledgements: "Thank you to Alessandra, Bruce, and Jesse" # Edit this
+  # Do not edit these
   frontpage: "Frontmatter/frontpage.tex"
   toc: "Frontmatter/toc.tex"
 
@@ -52,9 +54,6 @@ execute:
   echo: false
   code-overflow: wrap
 
-# urlcolor changes the url color in the body of the PDF
-# linkcolor changes color of internal links (like to figures)
-# toclinkcolor changes color of toc, lof and lot links
 format:  
   html:
     theme: cosmo
