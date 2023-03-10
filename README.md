@@ -1,54 +1,44 @@
 # USFCA Thesis Template
-This is unofficial template, use at your own discretion.
 
-Quarto extension for a USFCA Economics Master's thesis. If this is useful for you give my repo a ★.
+This is an unofficial template for USFCA Economics Master's theses, created using the Quarto extension. Please use at your own discretion. If you find it helpful, give this repo a star ★.
 
-This template is based on the Latex Template I made in overleaf (Mar 9 2023).
+## Getting Started
 
-Everything you need to know to get started you can find in [this official guide](https://quarto.org/docs/guide/).
-
-## Where to Use
-
-If this your first time using quarto, you first need to install it into your editor and install tinyTeX to render LaTeX PDFs.
+To use this template, you will need to install Quarto and TinyTeX.
 
 ### RStudio
-Install quarto and tinyTeX.
-```{r, eval = F}
-install.packages(quarto, tinytex)
+
+Install Quarto and TinyTeX by running the following command in R:
+
+```
+install.packages(c("quarto", "tinytex"))
 ```
 
 ### Visual Studio Code
-Go to Extensions -> look up "Quarto" -> install
-Then run the following command in the terminal if you don't have tinyTeX installed.
+
+Install the Quarto extension by going to Extensions -> search for "Quarto" -> install. Then run the following command in the terminal if you don't have TinyTeX installed:
+
 ```
 quarto install tinytex
-
 ```
 
-## Add Quarto Template
+## Adding the Quarto Template
 
-Installing the extension You will need to do this to get all the folders
-with tex files.
+To add the template to your project, run the following command in your terminal:
 
-Run the following command in your terminal.
+```
+quarto add template nikitoshina/USFCA-Thesis-Template
+```
 
-    quarto add template nikitoshina/USFCA-Thesis-Template
+This will download all the necessary folders with the LaTeX files for your thesis. You can render your project from within your folder by running the following command in terminal:
 
-Once you do that you can render from within the folder.
+```
+quarto render
+```
 
-    cd your_folder
+## Usage
 
-You can render your project from within your folder by running following command in terminal.
+Your first chapter should be written in index.qmd, and you can add additional chapters to the /Chapters folder. For citations, we recommend using Zotero. Please see the `_quarto.yml` file for additional configuration options.
 
-    quarto render
-
-Installation or updating for an existing document. You may also use this
-format with an existing Quarto project or document. But you will need to
-have all the tex folders already (see above).
-
-    quarto install extension nikitoshina/USFCA-Thesis-Template
-
-## Usage 
-
-Your first chapter will go into `index.qmd` and add your other chapters into `/Chapters` folder. Look at the file `_quarto.yml`. For citations use Zotero.
+For more information on getting started with Quarto, please see the [official guide](https://github.com/nikitoshina/USFCA-Thesis-Template).
 
