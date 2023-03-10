@@ -50,6 +50,5 @@ have all the tex folders already (see above).
 
 ## Usage 
 
-Your first chapter will go into `index.qmd` and add your other chapters into `/Chapters` folder. Look at the file `_quarto.yml`. 
-
+Your first chapter will go into `index.qmd` and add your other chapters into `/Chapters` folder. Look at the file `_quarto.yml`. For citations use Zotero.
 
