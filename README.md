@@ -1,17 +1,18 @@
 # USFCA Thesis Template
-This unofficial template, use at your own discretion.
+This is unofficial template, use at your own discretion.
 
 Quarto extension for a USFCA Economics Master's thesis. If this is useful for you give my repo a ★.
 
 This template is based on the Latex Template I made in overleaf (Mar 9 2023).
 
+Everything you need to know to get started you can find in [this official guide](https://quarto.org/docs/guide/).
 
 ## Where to Use
 
 If this your first time using quarto, you first need to install it into your editor and install tinyTeX to render LaTeX PDFs.
 
 ### RStudio
-install quarto
+Install quarto and tinyTeX.
 ```{r, eval = F}
 install.packages(quarto, tinytex)
 ```
@@ -49,7 +50,6 @@ have all the tex folders already (see above).
 
 ## Usage 
 
-Your first chapter will go into index.qmd and add your other chapters into `/Chapters` folder.
+Your first chapter will go into `index.qmd` and add your other chapters into `/Chapters` folder. Look at the file `_quarto.yml`. 
 
-Start adding Chapters to the Chapters folder.users: After you install
-the extension.
+
