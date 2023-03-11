@@ -9,7 +9,6 @@ book:
     email: natkachenko@dons.usfca.edu  # Edit this
   date: "5/13/2023"  # Edit this
   date-format: "d MMMM, YYYY"
-#  cover-image: 
   downloads: [pdf]
    # Edit the abstract
   abstract: |
@@ -23,7 +22,7 @@ book:
   chapters:
     - index.qmd
     - Chapters/Chapter2.qmd
-    # You cann add your other chapters here
+    # You can add your other chapters here
     - references.qmd
   appendices:
     - Appendices/AppendixA.qmd
