@@ -27,7 +27,7 @@ quarto install tinytex
 To add the template to your project, run the following command in your terminal:
 
 ```
-quarto add template nikitoshina/USFCA-Thesis-Template
+quarto use template nikitoshina/USFCA-Thesis-Template
 ```
 
 This will download all the necessary folders with the LaTeX files for your thesis. You can render your project from within your folder by running the following command in terminal:
